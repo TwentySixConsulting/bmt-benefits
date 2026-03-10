@@ -121,7 +121,7 @@
     }
     .hero h2 { color: var(--white); font-size: 46px; font-weight: 800; line-height: 1.1; margin-bottom: 18px; letter-spacing: -0.025em; }
     .hero h2 em { font-style: normal; color: var(--gold); }
-    .hero-sub { color: rgba(255,255,255,0.55); font-size: 15.5px; max-width: 580px; margin: 0 auto 44px; line-height: 1.75; }
+    .hero-sub { color: rgba(255,255,255,0.55); font-size: 15.5px; max-width: 600px; margin: 0 auto 44px; line-height: 1.75; }
     .hero-stats {
       display: flex; justify-content: center;
       border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg);
@@ -217,9 +217,9 @@
     .tbl-legend span { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: var(--text-soft); letter-spacing: 0.03em; }
     .tbl-legend .primary-label { color: var(--navy); font-weight: 700; }
     .ld { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    .ld-s { background: #4a7fcb; }
-    .ld-l { background: #2e8a5a; }
-    .ld-t { background: #b03060; }
+    .ld-arts { background: #b03060; }
+    .ld-nfp  { background: #2e8a5a; }
+    .ld-lp   { background: #4a7fcb; }
 
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
     table colgroup col:first-child  { width: 17%; }
@@ -229,10 +229,10 @@
 
     thead th { padding: 16px 20px; text-align: left; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; vertical-align: bottom; line-height: 1.3; }
     thead th:first-child  { background: var(--navy); color: var(--gold-light); }
-    thead th:nth-child(2) { background: var(--col-s-head); color: #a8c6e8; }
+    thead th:nth-child(2) { background: var(--col-t-head); color: #f0b0c0; }
+    thead th:nth-child(2)::after { content: ' ★'; font-size: 9px; opacity: 0.7; }
     thead th:nth-child(3) { background: var(--col-l-head); color: #90d8a8; }
-    thead th:nth-child(4) { background: var(--col-t-head); color: #f0b0c0; }
-    thead th:nth-child(4)::after { content: ' ★'; font-size: 9px; opacity: 0.7; }
+    thead th:nth-child(4) { background: var(--col-s-head); color: #a8c6e8; }
     .col-sub { display: block; font-size: 9.5px; font-weight: 400; opacity: 0.55; margin-top: 3px; letter-spacing: 0.05em; }
 
     tbody tr:nth-child(odd)  { background: var(--white); }
@@ -243,9 +243,9 @@
     tbody td { padding: 15px 20px; vertical-align: top; color: var(--text-mid); line-height: 1.65; }
     tbody td:first-child { font-weight: 600; color: var(--navy); font-size: 12.5px; border-right: 1px solid rgba(0,0,0,0.06); }
     .cell-sub { display: block; font-size: 11px; font-weight: 400; color: var(--text-soft); margin-top: 3px; }
-    tbody td:nth-child(2) { border-left: 2px solid rgba(74,127,203,0.12); }
+    tbody td:nth-child(2) { border-left: 2px solid rgba(176,48,96,0.12); }
     tbody td:nth-child(3) { border-left: 2px solid rgba(46,138,90,0.12); }
-    tbody td:nth-child(4) { border-left: 2px solid rgba(176,48,96,0.12); }
+    tbody td:nth-child(4) { border-left: 2px solid rgba(74,127,203,0.12); }
 
     .yes-cell { display: inline-flex; align-items: center; gap: 6px; color: var(--green); font-weight: 600; font-size: 12.5px; }
     .yes-cell svg { width: 15px; height: 15px; flex-shrink: 0; }
@@ -360,7 +360,7 @@
       Prepared by TwentySix
     </div>
     <h2>Birmingham Museums Trust<br><em>Benefits Benchmark Report</em></h2>
-    <p class="hero-sub">A comprehensive analysis of BMT's benefits provision, benchmarked against Large Private Sector, Social Enterprises, and Arts &amp; Heritage Sector market practice.</p>
+    <p class="hero-sub">A comprehensive analysis of BMT's benefits provision, benchmarked primarily against the <strong style="color:rgba(255,255,255,0.8)">Arts &amp; Heritage Sector</strong>, with reference to the Wider Not-for-Profit Sector and Large Private Sector for broader context.</p>
     <div class="hero-stats">
       <div class="hs"><span class="hs-val">3</span><span class="hs-lbl">Markets Analysed</span></div>
       <div class="hs"><span class="hs-val">6</span><span class="hs-lbl">Benefit Categories</span></div>
@@ -422,7 +422,7 @@
   <section class="intro-section">
     <div class="intro-card">
       <p>The following pages set out the detail of benefits practice across the three markets. For each benefit, we set out Birmingham Museums Trust's provision as we understand it and then describe <strong>'typical' market practice</strong>. We've done this rather than use our standard LQ/M/UQ practice because the latter is misleading in that not all organisations will have all of the benefits listed to the level described. Therefore, to be 'below' in some areas does not necessarily mean benefits provision is deficient — <strong>the absolutely most important factor is that benefits are aligned with the needs of the (current and future) employee base</strong>.</p>
-      <p>Below each table, we've listed any interesting ideas that we came across that aren't necessarily typical market practice, but might be worth noting. Market position indicators on BMT's benefits are benchmarked against the <strong>Arts &amp; Heritage Sector</strong> as the primary comparator.</p>
+      <p>Below each table, we've listed any interesting ideas that we came across that aren't necessarily typical market practice, but might be worth noting. Market position indicators on BMT's benefits are benchmarked primarily against the <strong>Arts &amp; Heritage Sector</strong>, with the <strong>Wider Not-for-Profit Sector</strong> providing additional context, and <strong>Large Private Sector</strong> included for broader reference.</p>
     </div>
   </section>
 
@@ -542,80 +542,80 @@
     </div>
     <div class="tbl-wrap">
       <div class="tbl-legend">
-        <span><span class="ld ld-s"></span>Large Private Sector</span>
-        <span><span class="ld ld-l"></span>Social Enterprises</span>
-        <span class="primary-label"><span class="ld ld-t"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span class="primary-label"><span class="ld ld-arts"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span><span class="ld ld-nfp"></span>Wider Not-for-Profit Sector</span>
+        <span><span class="ld ld-lp"></span>Large Private Sector</span>
       </div>
       <table>
         <colgroup><col><col><col><col></colgroup>
         <thead>
           <tr>
             <th>Benefit</th>
-            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
-            <th>Social Enterprises<span class="col-sub">Not-for-Profit &amp; Social</span></th>
             <th>Arts &amp; Heritage Sector<span class="col-sub">Primary Comparator</span></th>
+            <th>Wider Not-for-Profit Sector<span class="col-sub">Not-for-Profit &amp; Foundation</span></th>
+            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Bonus</td>
-            <td>Yes – either profit share or performance bonus common, typically between 5–20% depending on role and organisation</td>
-            <td><span class="mixed-cell">Rare</span></td>
             <td><span class="mixed-cell">Rare – 0–3%.</span> The median employer in this sector offers either no formal bonus scheme or a modest discretionary payment in the range of 0–3% of base salary.</td>
+            <td><span class="mixed-cell">Rare</span> – not a typical benefit in the wider not-for-profit sector</td>
+            <td>Yes – either profit share or performance bonus common, typically between 5–20% depending on role and organisation</td>
           </tr>
           <tr>
             <td>Annual Leave</td>
+            <td>25–28 days, increasing with service</td>
+            <td>25–28 days, increasing with service</td>
             <td>25 days (with around 50% increasing AL through service)</td>
-            <td>25–28 days, increasing with service</td>
-            <td>25–28 days, increasing with service</td>
           </tr>
           <tr>
             <td>Additional Days<span class="cell-sub">e.g. Christmas closedown</span></td>
-            <td><span class="mixed-cell">Relatively uncommon</span></td>
-            <td>1–3 additional days at Christmas is common but not universal</td>
             <td>Typical employers in Arts, Heritage &amp; Leisure offer 1 dedicated wellbeing day per year</td>
+            <td>1–3 additional days at Christmas is common but not universal</td>
+            <td><span class="mixed-cell">Relatively uncommon</span></td>
           </tr>
           <tr>
             <td>Buy &amp; Sell Leave</td>
+            <td>Being able to buy leave (up to 5 days) is a typical benefit; being able to sell leave is less common, although does happen</td>
+            <td>Being able to buy leave (up to 5 days) is a typical benefit; being able to sell leave is less common, although does happen</td>
             <td>Ability to buy/sell up to 5 days</td>
-            <td>Being able to buy leave (up to 5 days) is a typical benefit; being able to sell leave is less common, although does happen</td>
-            <td>Being able to buy leave (up to 5 days) is a typical benefit; being able to sell leave is less common, although does happen</td>
           </tr>
           <tr>
             <td>Pension</td>
+            <td>5–7% employer contribution is typical</td>
+            <td>5–7% employer contribution is typical with employee contribution between 3–5%</td>
             <td>5–7% employer contribution is typical, although ability to match contributions up to a typical level of 8%</td>
-            <td>5–7% employer contribution is typical</td>
-            <td>5–7% employer contribution is typical</td>
           </tr>
           <tr>
             <td>Sick Pay</td>
+            <td>3 months' full; 3 months' half pay</td>
+            <td>3 months' full; 3 months' half pay</td>
             <td>3 months' full; 3 months' half pay (followed by Permanent Health Insurance)</td>
-            <td>3 months' full; 3 months' half pay</td>
-            <td>3 months' full; 3 months' half pay</td>
           </tr>
           <tr>
             <td>Maternity Pay</td>
-            <td>6 months' full pay</td>
-            <td>Enhanced – 12 weeks' full pay</td>
             <td>SMP plus 4–8 weeks enhanced pay at full or partial salary</td>
+            <td>Enhanced – typically 12 weeks' full pay</td>
+            <td>6 months' full pay</td>
           </tr>
           <tr>
             <td>Paternity Pay</td>
-            <td>2 weeks' full pay is the typical benefit, but around 50% of organisations are considering extending this to match maternity benefit</td>
-            <td>2 weeks' full pay</td>
             <td>2 weeks at full pay, followed by SPP for remainder of statutory entitlement</td>
+            <td>2 weeks' full pay</td>
+            <td>2 weeks' full pay is the typical benefit, but around 50% of organisations are considering extending this to match maternity benefit</td>
           </tr>
           <tr>
             <td>Share Schemes</td>
+            <td><span class="na-cell">N/A</span></td>
+            <td><span class="na-cell">N/A</span></td>
             <td>Share options and Save as You Earn share schemes are the norm</td>
-            <td><span class="na-cell">N/A</span></td>
-            <td><span class="na-cell">N/A</span></td>
           </tr>
           <tr>
             <td>Car Allowance</td>
-            <td>Car allowance is given both for job need and typically at operational manager level upwards as a status perk</td>
-            <td><span class="mixed-cell">Rare</span></td>
             <td>Uncommon – typically eligibility limited to middle and senior management grades</td>
+            <td><span class="mixed-cell">Rare</span> – less common than in the private sector, typically limited to senior roles</td>
+            <td>Car allowance is given both for job need and typically at operational manager level upwards as a status perk</td>
           </tr>
         </tbody>
       </table>
@@ -624,6 +624,7 @@
       <div class="callout-hd"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg><h4>Less Common Benefits &amp; Ideas Worth Noting</h4></div>
       <ul>
         <li>Additional days (up to 3) as Well-Being / Mental Health Days that can be taken in addition to annual leave at short notice</li>
+        <li>We couldn't find much evidence of 'Duvet Days', so these may have fallen out of favour — effectively replaced by Well-Being Days</li>
       </ul>
     </div>
   </section>
@@ -638,31 +639,31 @@
     </div>
     <div class="tbl-wrap">
       <div class="tbl-legend">
-        <span><span class="ld ld-s"></span>Large Private Sector</span>
-        <span><span class="ld ld-l"></span>Social Enterprises</span>
-        <span class="primary-label"><span class="ld ld-t"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span class="primary-label"><span class="ld ld-arts"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span><span class="ld ld-nfp"></span>Wider Not-for-Profit Sector</span>
+        <span><span class="ld ld-lp"></span>Large Private Sector</span>
       </div>
       <table>
         <colgroup><col><col><col><col></colgroup>
         <thead>
           <tr>
             <th>Benefit</th>
-            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
-            <th>Social Enterprises<span class="col-sub">Not-for-Profit &amp; Social</span></th>
             <th>Arts &amp; Heritage Sector<span class="col-sub">Primary Comparator</span></th>
+            <th>Wider Not-for-Profit Sector<span class="col-sub">Not-for-Profit &amp; Foundation</span></th>
+            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Flexible Working</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – part-time, job-share and compressed hours offered</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – part-time, job-share and compressed hours offered</td>
             <td>More variable practice, but larger professional services organisations would typically offer part-time, job-share and compressed hours</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – part-time, job-share and compressed hours offered</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – part-time, job-share and compressed hours offered</td>
           </tr>
           <tr>
             <td>Hybrid / Remote Working</td>
             <td>Mixed practice: some but not all roles offered with the possibility of hybrid, with a minimum of 1–2 days per week in the office</td>
-            <td>Mixed practice: some but not all roles offered with the possibility of hybrid, with a minimum of 1–2 days per week in the office</td>
+            <td>Mixed practice: some but not all roles offered with the possibility of hybrid, with a minimum of 1–2 days' week in the office</td>
             <td>Mixed practice: some but not all roles offered with the possibility of hybrid, with a minimum of 1–2 days per week in the office</td>
           </tr>
           <tr>
@@ -673,9 +674,9 @@
           </tr>
           <tr>
             <td>Compassionate Leave</td>
-            <td>Up to 5 days</td>
-            <td>Up to 5 days</td>
             <td>3–5 days</td>
+            <td>Up to 5 days</td>
+            <td>Up to 5 days</td>
           </tr>
         </tbody>
       </table>
@@ -699,26 +700,26 @@
     </div>
     <div class="tbl-wrap">
       <div class="tbl-legend">
-        <span><span class="ld ld-s"></span>Large Private Sector</span>
-        <span><span class="ld ld-l"></span>Social Enterprises</span>
-        <span class="primary-label"><span class="ld ld-t"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span class="primary-label"><span class="ld ld-arts"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span><span class="ld ld-nfp"></span>Wider Not-for-Profit Sector</span>
+        <span><span class="ld ld-lp"></span>Large Private Sector</span>
       </div>
       <table>
         <colgroup><col><col><col><col></colgroup>
         <thead>
           <tr>
             <th>Benefit</th>
-            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
-            <th>Social Enterprises<span class="col-sub">Not-for-Profit &amp; Social</span></th>
             <th>Arts &amp; Heritage Sector<span class="col-sub">Primary Comparator</span></th>
+            <th>Wider Not-for-Profit Sector<span class="col-sub">Not-for-Profit &amp; Foundation</span></th>
+            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Life Assurance</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – 3/4× salary</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – 3/4× salary</td>
             <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – 3× salary</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – 3/4× salary</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – 3/4× salary</td>
           </tr>
           <tr>
             <td>Employee Assistance Programme</td>
@@ -728,39 +729,39 @@
           </tr>
           <tr>
             <td>Private Medical Insurance</td>
-            <td>This is a standard benefit in larger organisations, with 84% of respondents to a large benefits survey offering this. Coverage is typically for individuals with the ability to top up to family membership.</td>
-            <td>Currently not typically offered – however, we are seeing more interest among current clients so this is one to watch</td>
             <td>Uncommon – PMI available to senior/managerial staff only</td>
+            <td>Currently not typically offered – however, we are seeing more interest among current clients so this is one to watch</td>
+            <td>This is a standard benefit in larger organisations, with 84% of respondents to a large benefits survey offering this. Coverage is typically for individuals with the ability to top up to family membership.</td>
           </tr>
           <tr>
             <td>Health Cash Plan<span class="cell-sub">Including dental</span></td>
-            <td>Less common due to the prevalence of PMI</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – this is a very common benefit, much more so than PMI above</td>
             <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – employer-funded or subsidised health cash plan covering core dental, optical and therapy claims (typically £5–£10/week employer contribution or group rate access)</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – this is a very common benefit, much more so than PMI above</td>
+            <td>Less common due to the prevalence of PMI</td>
           </tr>
           <tr>
             <td>Permanent Health Insurance</td>
-            <td><span class="mixed-cell">Mixed practice</span> – with around half of private sector employers offering this</td>
-            <td>This is not yet a standard benefit, but has become more prevalent with the decrease in sick pay entitlement over the past 10 years</td>
             <td><span class="mixed-cell">Mixed practice</span> – basic group income protection at 50% of salary, 26-week deferred period, to age 65</td>
+            <td>This is not yet a standard benefit, but has become more prevalent with the decrease in sick pay entitlement over the past 10 years</td>
+            <td><span class="mixed-cell">Mixed practice</span> – with around half of private sector employers offering this</td>
           </tr>
           <tr>
             <td>Digital GP</td>
-            <td>Typically offered as part of PMI or Health Cash Plan – a more standard benefit than in the not-for-profit sector</td>
-            <td>May be offered as part of PMI or Health Cash Plan but not a standard benefit</td>
             <td>May be offered as part of PMI or Health Cash Plan</td>
+            <td>May be offered as part of PMI or Health Cash Plan but not a standard benefit</td>
+            <td>Typically offered as part of PMI or Health Cash Plan – a more standard benefit than in the not-for-profit sector</td>
           </tr>
           <tr>
             <td>Health Screening</td>
+            <td><span class="mixed-cell">Mixed practice</span> – not a standard benefit</td>
+            <td><span class="mixed-cell">Mixed practice</span> – not a standard benefit</td>
             <td>Typically offered as part of PMI or Health Cash Plan</td>
-            <td><span class="mixed-cell">Mixed practice</span> – not a standard benefit</td>
-            <td><span class="mixed-cell">Mixed practice</span> – not a standard benefit</td>
           </tr>
           <tr>
             <td>Gym Membership</td>
+            <td>Contribution towards gym membership is a common benefit</td>
+            <td>Contribution towards gym membership is a common benefit</td>
             <td>Contribution towards gym membership is a common benefit – often as part of a flexible benefits scheme</td>
-            <td>Contribution towards gym membership is a common benefit</td>
-            <td>Contribution towards gym membership is a common benefit</td>
           </tr>
           <tr>
             <td>Flu Jabs</td>
@@ -776,9 +777,9 @@
           </tr>
           <tr>
             <td>Access to Mental Health Apps</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span>, but much less provision of Digital GP services</td>
+            <td>The wider not-for-profit sector commonly offers this (but is less likely to offer a Digital GP)</td>
             <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span></td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span>, but much less provision of Digital GP services</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span>, but much less provision of Digital GP services</td>
           </tr>
         </tbody>
       </table>
@@ -803,18 +804,18 @@
     </div>
     <div class="tbl-wrap">
       <div class="tbl-legend">
-        <span><span class="ld ld-s"></span>Large Private Sector</span>
-        <span><span class="ld ld-l"></span>Social Enterprises</span>
-        <span class="primary-label"><span class="ld ld-t"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span class="primary-label"><span class="ld ld-arts"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span><span class="ld ld-nfp"></span>Wider Not-for-Profit Sector</span>
+        <span><span class="ld ld-lp"></span>Large Private Sector</span>
       </div>
       <table>
         <colgroup><col><col><col><col></colgroup>
         <thead>
           <tr>
             <th>Benefit</th>
-            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
-            <th>Social Enterprises<span class="col-sub">Not-for-Profit &amp; Social</span></th>
             <th>Arts &amp; Heritage Sector<span class="col-sub">Primary Comparator</span></th>
+            <th>Wider Not-for-Profit Sector<span class="col-sub">Not-for-Profit &amp; Foundation</span></th>
+            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
           </tr>
         </thead>
         <tbody>
@@ -826,9 +827,9 @@
           </tr>
           <tr>
             <td>Low Cost Loans &amp; Savings Plans</td>
+            <td>Low cost loans typically given for specific items, such as Season Tickets. Scheme available for annual travel cards; repaid over 10–12 months via payroll deduction. Mixed practice – some use of Credit Unions but not universal.</td>
+            <td>Mixed practice – there is some use of Credit Unions but not universal practice. Low cost loans typically given for specific items, such as Season Tickets.</td>
             <td>Save As You Earn / Share Save schemes are common. Low cost loans typically given for specific items, such as Season Tickets.</td>
-            <td>Low cost loans typically given for specific items, such as Season Tickets. Mixed practice – there is some use of Credit Unions but not universal practice.</td>
-            <td>Low cost loans typically given for specific items, such as Season Tickets. Mixed practice – there is some use of Credit Unions but not universal practice. Scheme available for annual travel cards; repaid over 10–12 months via payroll deduction.</td>
           </tr>
           <tr>
             <td>Retail Discounts</td>
@@ -867,38 +868,38 @@
     </div>
     <div class="tbl-wrap">
       <div class="tbl-legend">
-        <span><span class="ld ld-s"></span>Large Private Sector</span>
-        <span><span class="ld ld-l"></span>Social Enterprises</span>
-        <span class="primary-label"><span class="ld ld-t"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span class="primary-label"><span class="ld ld-arts"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span><span class="ld ld-nfp"></span>Wider Not-for-Profit Sector</span>
+        <span><span class="ld ld-lp"></span>Large Private Sector</span>
       </div>
       <table>
         <colgroup><col><col><col><col></colgroup>
         <thead>
           <tr>
             <th>Benefit</th>
-            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
-            <th>Social Enterprises<span class="col-sub">Not-for-Profit &amp; Social</span></th>
             <th>Arts &amp; Heritage Sector<span class="col-sub">Primary Comparator</span></th>
+            <th>Wider Not-for-Profit Sector<span class="col-sub">Not-for-Profit &amp; Foundation</span></th>
+            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Pension Invested Ethically</td>
-            <td><span class="mixed-cell">Mixed practice</span></td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> (but practice more mixed than in Foundations)</td>
             <td>ESG fund option available within pension platform</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> (but practice more mixed than in Foundations)</td>
+            <td><span class="mixed-cell">Mixed practice</span></td>
           </tr>
           <tr>
             <td>Commitment to Tackling Pay Inequality</td>
             <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – stated commitment</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – stated commitment</td>
+            <td><span class="mixed-cell">Mixed practice</span></td>
             <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – stated commitment</td>
           </tr>
           <tr>
             <td>Paid Volunteering Days</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – typically around 1–2 days</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – typically around 1–2 days</td>
             <td>Around 50% of organisations, with an average provision of 1.5 days</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – typically around 1–2 days</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – typically around 1–2 days</td>
           </tr>
         </tbody>
       </table>
@@ -922,31 +923,31 @@
     </div>
     <div class="tbl-wrap">
       <div class="tbl-legend">
-        <span><span class="ld ld-s"></span>Large Private Sector</span>
-        <span><span class="ld ld-l"></span>Social Enterprises</span>
-        <span class="primary-label"><span class="ld ld-t"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span class="primary-label"><span class="ld ld-arts"></span>Arts &amp; Heritage Sector ★ Primary Comparator</span>
+        <span><span class="ld ld-nfp"></span>Wider Not-for-Profit Sector</span>
+        <span><span class="ld ld-lp"></span>Large Private Sector</span>
       </div>
       <table>
         <colgroup><col><col><col><col></colgroup>
         <thead>
           <tr>
             <th>Benefit</th>
-            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
-            <th>Social Enterprises<span class="col-sub">Not-for-Profit &amp; Social</span></th>
             <th>Arts &amp; Heritage Sector<span class="col-sub">Primary Comparator</span></th>
+            <th>Wider Not-for-Profit Sector<span class="col-sub">Not-for-Profit &amp; Foundation</span></th>
+            <th>Large Private Sector<span class="col-sub">Corporate &amp; Listed</span></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Personal Development Budget</td>
-            <td><span class="mixed-cell">Mixed practice</span> – not standard to have a personal budget that is not linked to work outcomes</td>
-            <td><span class="mixed-cell">Mixed practice</span> – not standard to have a personal budget that is not linked to work outcomes</td>
             <td><span class="mixed-cell">Mixed practice</span> – but with median employers providing a discretionary personal development budget of approximately £250–£500 per employee per year</td>
+            <td><span class="mixed-cell">Mixed practice</span> – not standard to have a personal budget that is not linked to work outcomes</td>
+            <td><span class="mixed-cell">Mixed practice</span> – not standard to have a personal budget that is not linked to work outcomes</td>
           </tr>
           <tr>
             <td>Free Access to Courses &amp; Videos</td>
             <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span></td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span></td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – typical market practice</td>
             <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span></td>
           </tr>
           <tr>
@@ -957,9 +958,9 @@
           </tr>
           <tr>
             <td>Career Development<span class="cell-sub">Training courses, work shadowing, mentoring</span></td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – larger corporates have the full range of development opportunities</td>
-            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – this is typical market practice. The Not-for-Profit and Foundation sectors typically place more emphasis on learning opportunities than the private sector.</td>
             <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – training budget commonly £200–£500 per employee per year in smaller organisations, rising to around £500–£1,000 in mid-sized bodies such as regional theatres, heritage trusts or local authority-managed leisure facilities.</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – this is typical market practice. The not-for-profit and foundation sectors typically place more emphasis on learning opportunities than the private sector.</td>
+            <td><span class="yes-cell"><svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Yes</span> – larger corporates have the full range of development opportunities; smaller organisations may not provide as much.</td>
           </tr>
         </tbody>
       </table>
